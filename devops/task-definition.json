@@ -1,56 +1,59 @@
 {
-  "taskDefinitionArn": "arn:aws:ecs:us-east-1:218920203343:task-definition/test_app",
-  "containerDefinitions": [
-    {
-      "name": "test_app",
-      "image": "218920203343.dkr.ecr.us-east-1.amazonaws.com/test_app_repo",
-      "cpu": 256,
-      "memory": 512,
-      "portMappings": [
+    "taskDefinitionArn": "arn:aws:ecs:us-east-1:853364189175:task-definition/test_app:1",
+    "containerDefinitions": [
         {
-          "containerPort": 80,
-          "hostPort": 80,
-          "protocol": "tcp"
+            "name": "test_app",
+            "image": "853364189175.dkr.ecr.us-east-1.amazonaws.com/test_app-repo",
+            "cpu": 256,
+            "memory": 512,
+            "portMappings": [
+                {
+                    "containerPort": 80,
+                    "hostPort": 80,
+                    "protocol": "tcp"
+                }
+            ],
+            "essential": true,
+            "environment": [],
+            "mountPoints": [],
+            "volumesFrom": []
         }
-      ],
-      "essential": true,
-      "environment": [],
-      "mountPoints": [],
-      "volumesFrom": []
-    }
-  ],
-  "family": "test_app",
-  "taskRoleArn": "arn:aws:iam::218920203343:role/ecsTaskExecutionRole",
-  "executionRoleArn": "arn:aws:iam::218920203343:role/ecsTaskExecutionRole",
-  "networkMode": "awsvpc",
-  "volumes": [],
-  "status": "ACTIVE",
-  "requiresAttributes": [
-    {
-      "name": "com.amazonaws.ecs.capability.ecr-auth"
-    },
-    {
-      "name": "com.amazonaws.ecs.capability.task-iam-role"
-    },
-    {
-      "name": "ecs.capability.execution-role-ecr-pull"
-    },
-    {
-      "name": "com.amazonaws.ecs.capability.docker-remote-api.1.18"
-    },
-    {
-      "name": "ecs.capability.task-eni"
-    }
-  ],
-  "placementConstraints": [],
-  "compatibilities": [
-    "EC2",
-    "FARGATE"
-  ],
-  "requiresCompatibilities": [
-    "FARGATE"
-  ],
-  "cpu": "256",
-  "memory": "512",
-  "registeredBy": "arn:aws:iam::218920203343:user/svc"
+    ],
+    "family": "test_app",
+    "taskRoleArn": "arn:aws:iam::853364189175:role/ecsTaskExecutionRole",
+    "executionRoleArn": "arn:aws:iam::853364189175:role/ecsTaskExecutionRole",
+    "networkMode": "awsvpc",
+    "revision": 1,
+    "volumes": [],
+    "status": "ACTIVE",
+    "requiresAttributes": [
+        {
+            "name": "com.amazonaws.ecs.capability.ecr-auth"
+        },
+        {
+            "name": "com.amazonaws.ecs.capability.task-iam-role"
+        },
+        {
+            "name": "ecs.capability.execution-role-ecr-pull"
+        },
+        {
+            "name": "com.amazonaws.ecs.capability.docker-remote-api.1.18"
+        },
+        {
+            "name": "ecs.capability.task-eni"
+        }
+    ],
+    "placementConstraints": [],
+    "compatibilities": [
+        "EC2",
+        "FARGATE"
+    ],
+    "requiresCompatibilities": [
+        "FARGATE"
+    ],
+    "cpu": "256",
+    "memory": "512",
+    "registeredAt": "2023-03-31T03:45:50.356Z",
+    "registeredBy": "arn:aws:iam::853364189175:user/ayo",
+    "tags": []
 }
