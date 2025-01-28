@@ -5,7 +5,10 @@ sensitiveCodepaths:
 allowedAuthors:
   usernames:
     # GitHub username
+    # - 'john-doe'
     - 'ayomideodukoya'
 notificationList:
   # GitHub username or team name
+  # - '@DryRunSec/security'
+  # - '@john-doe'
   - '@ayomideodukoya'
