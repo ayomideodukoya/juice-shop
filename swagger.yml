@@ -22,7 +22,7 @@ paths:
       tags: [Order]
       description: 'Create new customer order'
       responses: { '200': { description: 'New customer order is created', content: { application/json: { schema: { $ref: '#/components/schemas/OrderConfirmation' } } } } }
-      requestBody: { content: { application/json: { schema: { $ref: '#/components/schemas/Order' } } }, description: 'Customer order to be placed' }
+      requestBody: { content: { application/json: { schema: { $ref: '#/components/schemas/Order' } } }, description: 'Customer order to be placedd' }
 components:
   securitySchemes:
     bearerAuth:
